@@ -1,0 +1,66 @@
+.task-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    word-wrap: break-word;
+    height: 200px;
+    /* Set a fixed height for each task item */
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+.task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.task-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-description {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* Make the description scrollable */
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.task-date {
+    color: #888;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
